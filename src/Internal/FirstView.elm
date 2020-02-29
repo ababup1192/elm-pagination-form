@@ -1,4 +1,4 @@
-module Internal.FirstView exposing (firstView)
+module Internal.FirstView exposing (firstView, textToADigitNumber)
 
 import Html exposing (Html, button, div, input, p, text)
 import Html.Attributes exposing (type_, value)

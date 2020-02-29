@@ -1,4 +1,4 @@
-module Internal.ThirdView exposing (thirdView)
+module Internal.ThirdView exposing (correctThirdValue, thirdView)
 
 import Html exposing (Html, button, div, input, p, text)
 import Html.Attributes exposing (value)

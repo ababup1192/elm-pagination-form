@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel ./src/index.html --out-dir dist",
-    "build": "parcel build ./src/index.html --out-dir dist"
+    "build": "parcel build ./src/index.html --out-dir dist",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "elm-test && start-server-and-test start http://localhost:1234 cy:run"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^4.1.0",
     "elm": "^0.19.1-3",
     "elm-hot": "^1.1.4",
+    "elm-test": "^0.19.1-revision2",
     "node-elm-compiler": "^5.0.4",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "start-server-and-test": "^1.10.8"
   }
 }

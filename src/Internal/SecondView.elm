@@ -1,4 +1,4 @@
-module Internal.SecondView exposing (secondView)
+module Internal.SecondView exposing (correctSecondValue, secondView)
 
 import Html exposing (Html, button, div, input, p, text)
 import Html.Attributes exposing (type_, value)
@@ -51,5 +51,5 @@ correctSecondValue : FirstSecondValue -> Bool
 correctSecondValue firstSecondValue =
     case firstSecondValue of
         { firstValue, secondValue } ->
-            (firstValue < 5 && List.member secondValue [ "A", "B", "C" ])
-                || (firstValue >= 5 && firstValue <= 9 && List.member secondValue [ "D", "E", "F" ])
+            (firstValue <= 5 && List.member secondValue [ "A", "B", "C" ])
+                || (firstValue > 5 && firstValue <= 9 && List.member secondValue [ "D", "E", "F" ])

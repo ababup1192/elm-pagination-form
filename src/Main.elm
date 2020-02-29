@@ -11,6 +11,7 @@ import Internal.ThirdView exposing (thirdView)
 -- MAIN
 
 
+main : Program () Model Msg
 main =
     Browser.element
         { init = init

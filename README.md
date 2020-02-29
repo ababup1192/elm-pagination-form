@@ -1,9 +1,13 @@
 # Elm Parcel
 
-## dev
+## ATDD
 
 ```
 $ npm start
+$ npm cy:open
+
+// Run all specs
+// Change your code
 ```
 
 ## test
